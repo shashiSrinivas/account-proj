@@ -19,7 +19,7 @@ public class AppTestIT
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        
         get("/echo/hello").then().assertThat().body("message", equalTo("hello"));
     }
 }
