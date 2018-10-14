@@ -4,10 +4,14 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import static com.jayway.restassured.RestAssured.*;
+
+import static org.hamcrest.Matchers.*;
+
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTestIT
 {
     /**
      * Rigorous Test :-)
@@ -16,5 +20,6 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+        get("/echo/hello").then().assertThat().body("message", equalTo("hello"));
     }
 }
