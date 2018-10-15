@@ -22,4 +22,6 @@ public class AppTestIT
         
         get("/echo/hello").then().assertThat().body("message", equalTo("hello"));
     }
+    
+   
 }
