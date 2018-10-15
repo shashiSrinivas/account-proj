@@ -1,17 +1,17 @@
 package com.account.project.assessment.model;
 
-public class Account {
+public class Accounting {
 	 private long id;
 	    private String firstName;
 	    private String secondName;
-	    private long accountNumber;
+	    private String accountNumber;
 	    
-	    public Account()
+	    public Accounting()
 	    {
 	    	
 	    }
 	    
-	    public Account(long id, String firstName, String secondName,long accountNumber)
+	    public Accounting(long id, String firstName, String secondName,String accountNumber)
 	    {
 	    	this.id = id;
 	    	this.firstName = firstName;
@@ -43,11 +43,11 @@ public class Account {
 			this.secondName = secondName;
 		}
 
-		public long getAccountNumber() {
+		public String getAccountNumber() {
 			return accountNumber;
 		}
 
-		public void setAccountNumber(long accountNumber) {
+		public void setAccountNumber(String accountNumber) {
 			this.accountNumber = accountNumber;
 		}
 
